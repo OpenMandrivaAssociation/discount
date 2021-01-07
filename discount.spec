@@ -1,6 +1,7 @@
 %define major 2
 %define libname %mklibname markdown %{major}
 %define develname %mklibname markdown -d
+%define _disable_ld_no_undefined 1
 
 Summary:	A C implementation of the Markdown language
 Name:		discount
