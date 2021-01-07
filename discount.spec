@@ -4,12 +4,12 @@
 
 Summary:	A C implementation of the Markdown language
 Name:		discount
-Version:	2.2.4
+Version:	2.2.7
 Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.pell.portland.or.us/~orc/Code/discount
-Source0:	https://github.com/Orc/discount/archive/v%{version}.tar.gz
+Source0:	https://github.com/Orc/discount/archive/%{name}-%{version}.tar.gz
 Patch0:		https://src.fedoraproject.org/rpms/discount/raw/master/f/discount-dont-run-ldconfig.patch
 
 %description
@@ -42,6 +42,8 @@ dynamically linked with discount
 Summary:	%{summary} header files
 Group:		Development/Other
 Requires:	%{libname} = %{EVRD}
+Provides:	%{name} = %{EVRD}
+Provides:	libmarkdown = %{EVRD}
 
 %description -n %{develname}
 This package provides headers files for discount development.
@@ -56,7 +58,9 @@ This package provides headers files for discount development.
 
 %prep
 %autosetup -p1
-CFLAGS='%{optflags}' ./configure.sh \
+%set_build_flags
+
+./configure.sh \
 	--shared \
 	--prefix=%{_prefix} \
 	--execdir=%{_bindir} \
