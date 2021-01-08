@@ -6,7 +6,7 @@
 Summary:	A C implementation of the Markdown language
 Name:		discount
 Version:	2.2.7
-Release:	2
+Release:	3
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.pell.portland.or.us/~orc/Code/discount
@@ -44,8 +44,8 @@ dynamically linked with discount
 Summary:	%{summary} header files
 Group:		Development/Other
 Requires:	%{libname} = %{EVRD}
+Requires:	%{name} = %{EVRD}
 Provides:	%{name}-devel = %{EVRD}
-Provides:	libmarkdown = %{EVRD}
 
 %description -n %{develname}
 This package provides headers files for discount development.
