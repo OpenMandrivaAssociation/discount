@@ -6,7 +6,7 @@
 Summary:	A C implementation of the Markdown language
 Name:		discount
 Version:	2.2.7
-Release:	3
+Release:	4
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.pell.portland.or.us/~orc/Code/discount
@@ -22,8 +22,8 @@ Patch1:		https://github.com/Orc/discount/commit/55cea9c5.patch
 %{_bindir}/makepage
 %{_bindir}/mkd2html
 %{_bindir}/theme
-%{_mandir}/man1/*.1*
-%{_mandir}/man7/*.7*
+%doc %{_mandir}/man1/*.1*
+%doc %{_mandir}/man7/*.7*
 
 #-----------------------------------------------------------------------
 
@@ -54,7 +54,7 @@ This package provides headers files for discount development.
 %{_includedir}/mkdio.h
 %{_libdir}/lib*.so
 %{_libdir}/pkgconfig/*.pc
-%{_mandir}/man3/*.3*
+%doc %{_mandir}/man3/*.3*
 
 #-----------------------------------------------------------------------
 
