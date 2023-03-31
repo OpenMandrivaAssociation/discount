@@ -6,7 +6,7 @@
 Summary:	A C implementation of the Markdown language
 Name:		discount
 Version:	2.2.7
-Release:	4
+Release:	5
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://www.pell.portland.or.us/~orc/Code/discount
