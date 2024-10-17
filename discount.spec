@@ -9,7 +9,7 @@ Version:	2.2.7
 Release:	5
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://www.pell.portland.or.us/~orc/Code/discount
+Url:		https://www.pell.portland.or.us/~orc/Code/discount
 Source0:	https://github.com/Orc/discount/archive/%{name}-%{version}.tar.gz
 Patch0:		https://src.fedoraproject.org/rpms/discount/raw/master/f/discount-dont-run-ldconfig.patch
 Patch1:		https://github.com/Orc/discount/commit/55cea9c5.patch
