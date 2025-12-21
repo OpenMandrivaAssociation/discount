@@ -14,6 +14,11 @@ Source0:	https://github.com/Orc/discount/archive/%{name}-%{version}.tar.gz
 Patch0:		https://src.fedoraproject.org/rpms/discount/raw/master/f/discount-dont-run-ldconfig.patch
 Patch1:		https://github.com/Orc/discount/commit/55cea9c5.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 %{summary}.
 
